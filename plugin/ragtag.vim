@@ -140,7 +140,7 @@ function! s:Init()
     let b:surround_45 = "<% \r %>"
     let b:surround_61 = "<%= \r %>"
   endif
-  imap <script> <buffer> <C-X>= <SID>ragtagOopen<SID>ragtagOclose<Left>
+  imap <script> <buffer> <C-X>= <SID>ragtagOopen<SID>ragtagOclose<Esc>2hi
   imap <script> <buffer> <C-X>+ <C-V><NL><Esc>I<SID>ragtagOopen<Esc>A<SID>ragtagOclose<Esc>F<NL>s
   " <%\n\n%>
   if s:isFiletype('cf')
